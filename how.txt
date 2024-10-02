@@ -1,0 +1,45 @@
+https://www.ganatan.com/tutorials/server-side-rendering-with-angular-universal
+this is the blog. 
+these are the steps
+
+
+
+
+
+
+
+# Install Angular CLI specific version (latest if possible)
+npm install -g @angular/cli@18.0.3
+
+# Create a demo directory (the name here is arbitrary)
+mkdir demo
+
+# Go to this directory
+cd demo
+
+# Generate a project called angular-starter with manual choice of options (answer yes to everything)
+ng new angular-starter
+
+# Position yourself in the project
+cd angular-starter
+
+# Run the application in normal mode
+npm run start
+
+# Test the app in your browser
+http://localhost:4200
+
+# Installing the necessary dependencies for SSR
+ng add @angular/ssr
+
+# Build the application in SSR mode
+npm run build
+
+# Run the application in SSR mode
+npm run serve:ssr:angular-starter
+
+# Test the app in your browser
+http://localhost:4000
+
+
+I was browsing this solution for fucking long time and finally found this blog and it worked
